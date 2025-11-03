@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ người dùng - MelodyHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="giaodien.html" class="text-2xl font-bold text-purple-600">
+                        <i class="fas fa-music mr-2"></i>MelodyHub
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="logout-btn" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition">
+                        <i class="fas fa-sign-out-alt mr-2"></i>Đăng xuất
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="max-w-4xl mx-auto py-8 px-4">
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <!-- Profile Header -->
+            <div class="bg-gradient-to-r from-purple-600 to-pink-600 p-8 text-white">
+                <div class="flex items-center space-x-6">
+                    <div class="w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                        <img id="user-avatar" src="https://via.placeholder.com/150" alt="Avatar" class="w-20 h-20 rounded-full object-cover">
+                    </div>
+                    <div>
+                        <h1 id="user-name" class="text-3xl font-bold">Tên người dùng</h1>
+                        <p id="user-email" class="text-lg opacity-90">email@example.com</p>
+                        <p id="user-role" class="text-sm opacity-75">Thành viên từ: <span id="join-date"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Content -->
+            <div class="p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Thông tin cá nhân -->
+                    <div class="space-y-6">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                            <i class="fas fa-user mr-2 text-purple-600"></i>Thông tin cá nhân
+                        </h2>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Họ và tên</label>
+                                <input type="text" id="edit-name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500" readonly>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" id="edit-email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500" readonly>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Giới thiệu</label>
+                                <textarea id="edit-bio" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500" placeholder="Giới thiệu về bản thân..."></textarea>
+                            </div>
+                        </div>
+                        
+                        <button id="edit-profile-btn" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition">
+                            <i class="fas fa-edit mr-2"></i>Chỉnh sửa thông tin
+                        </button>
+                    </div>
+
+                    <!-- Thống kê -->
+                    <div class="space-y-6">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                            <i class="fas fa-chart-bar mr-2 text-purple-600"></i>Thống kê
+                        </h2>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-purple-50 p-4 rounded-lg text-center">
+                                <div class="text-2xl font-bold text-purple-600" id="playlist-count">0</div>
+                                <div class="text-sm text-gray-600">Playlist</div>
+                            </div>
+                            
+                            <div class="bg-pink-50 p-4 rounded-lg text-center">
+                                <div class="text-2xl font-bold text-pink-600" id="favorite-count">0</div>
+                                <div class="text-sm text-gray-600">Bài hát yêu thích</div>
+                            </div>
+                            
+                            <div class="bg-blue-50 p-4 rounded-lg text-center">
+                                <div class="text-2xl font-bold text-blue-600" id="listening-time">0h</div>
+                                <div class="text-sm text-gray-600">Thời gian nghe</div>
+                            </div>
+                            
+                            <div class="bg-green-50 p-4 rounded-lg text-center">
+                                <div class="text-2xl font-bold text-green-600" id="last-login">Hôm nay</div>
+                                <div class="text-sm text-gray-600">Lần đăng nhập cuối</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thể loại yêu thích -->
+                <div class="mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                        <i class="fas fa-heart mr-2 text-purple-600"></i>Thể loại yêu thích
+                    </h2>
+                    <div id="favorite-genres" class="flex flex-wrap gap-2">
+                        <!-- Genres will be loaded here -->
+                    </div>
+                </div>
+
+                <!-- Playlists -->
+                <div class="mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                        <i class="fas fa-list mr-2 text-purple-600"></i>Playlist của tôi
+                    </h2>
+                    <div id="user-playlists" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- Playlists will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>

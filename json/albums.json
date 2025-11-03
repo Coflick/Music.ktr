@@ -1,0 +1,131 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "name": "Midnight Vibes",
+      "artist": "Taylor Swift",
+      "image": "https://tse3.mm.bing.net/th/id/OIP.CBPwp4xeViiWIrqv3ymBjgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "alt": "Bìa album thiết kế trừu tượng hiện đại với màu sắc rực rỡ",
+      "year": 2023,
+      "genre": "Pop",
+      "songCount": 12,
+      "duration": "45:30",
+      "isNew": true,
+      "isFeatured": true
+    },
+    {
+      "id": 2,
+      "name": "Urban Legends",
+      "artist": "Kendrick Lamar",
+      "image": "https://tse2.mm.bing.net/th/id/OIP.2fzDevfWlZhx9dlIc1ctowHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "alt": "Bìa album với phong cách street art",
+      "year": 2022,
+      "genre": "Hip Hop",
+      "songCount": 15,
+      "duration": "52:15",
+      "isNew": false,
+      "isFeatured": true
+    },
+    {
+      "id": 3,
+      "name": "Retro Future",
+      "artist": "Dua Lipa",
+      "image": "https://tse3.mm.bing.net/th/id/OIP.kuOoYQgto4lTclgF_v_yWwHaEs?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "alt": "Bìa album với phong cách synthwave retro thập niên 80",
+      "year": 2023,
+      "genre": "Pop",
+      "songCount": 10,
+      "duration": "38:45",
+      "isNew": true,
+      "isFeatured": false
+    },
+    {
+      "id": 4,
+      "name": "Serenity",
+      "artist": "Billie Eilish",
+      "image": "https://tse1.mm.bing.net/th/id/OIP.Pc0avloeBRfUwU3pcY43tAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "alt": "Bìa album với thiết kế tối giản và màu pastel nhẹ nhàng",
+      "year": 2023,
+      "genre": "Alternative",
+      "songCount": 8,
+      "duration": "32:20",
+      "isNew": true,
+      "isFeatured": true
+    },
+    {
+      "id": 5,
+      "name": "After Hours",
+      "artist": "The Weeknd",
+      "image": "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f946069e-d49e-4431-bea4-1a29338e3cd5.png",
+      "alt": "Bìa album với thiết kế tối và phong cách neon",
+      "year": 2020,
+      "genre": "R&B",
+      "songCount": 14,
+      "duration": "56:12",
+      "isNew": false,
+      "isFeatured": true
+    },
+    {
+      "id": 6,
+      "name": "Future Nostalgia",
+      "artist": "Dua Lipa",
+      "image": "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1d8dd6e6-5a45-45c1-a35a-0e539d36abc1.png",
+      "alt": "Bìa album với phong cách disco và màu sắc rực rỡ",
+      "year": 2020,
+      "genre": "Pop",
+      "songCount": 11,
+      "duration": "43:28",
+      "isNew": false,
+      "isFeatured": false
+    }
+  ],
+  "featuredAlbums": [
+    {
+      "id": 1,
+      "name": "Midnight Vibes",
+      "artist": "Taylor Swift",
+      "image": "https://tse3.mm.bing.net/th/id/OIP.CBPwp4xeViiWIrqv3ymBjgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "alt": "Bìa album thiết kế trừu tượng hiện đại với màu sắc rực rỡ",
+      "year": 2023,
+      "genre": "Pop",
+      "songCount": 12,
+      "duration": "45:30"
+    },
+    {
+      "id": 2,
+      "name": "Urban Legends",
+      "artist": "Kendrick Lamar",
+      "image": "https://tse2.mm.bing.net/th/id/OIP.2fzDevfWlZhx9dlIc1ctowHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "alt": "Bìa album với phong cách street art",
+      "year": 2022,
+      "genre": "Hip Hop",
+      "songCount": 15,
+      "duration": "52:15"
+    },
+    {
+      "id": 3,
+      "name": "Retro Future",
+      "artist": "Dua Lipa",
+      "image": "https://tse3.mm.bing.net/th/id/OIP.kuOoYQgto4lTclgF_v_yWwHaEs?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "alt": "Bìa album với phong cách synthwave retro thập niên 80",
+      "year": 2023,
+      "genre": "Pop",
+      "songCount": 10,
+      "duration": "38:45"
+    },
+    {
+      "id": 4,
+      "name": "Serenity",
+      "artist": "Billie Eilish",
+      "image": "https://tse1.mm.bing.net/th/id/OIP.Pc0avloeBRfUwU3pcY43tAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "alt": "Bìa album với thiết kế tối giản và màu pastel nhẹ nhàng",
+      "year": 2023,
+      "genre": "Alternative",
+      "songCount": 8,
+      "duration": "32:20"
+    }
+  ],
+  "totalAlbums": 6,
+  "newReleases": 3,
+  "featuredCount": 4
+}

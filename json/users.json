@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@melodyhub.com",
+      "password": "admin123",
+      "role": "admin",
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "lastLogin": null,
+      "profile": {
+        "avatar": "https://via.placeholder.com/150",
+        "bio": "Quản trị viên hệ thống",
+        "favoriteGenres": ["Pop", "Rock", "Jazz"],
+        "playlists": []
+      }
+    },
+    {
+      "id": 2,
+      "name": "Demo User",
+      "email": "demo@melodyhub.com",
+      "password": "demo123",
+      "role": "user",
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "lastLogin": null,
+      "profile": {
+        "avatar": "https://via.placeholder.com/150",
+        "bio": "Người dùng demo",
+        "favoriteGenres": ["Pop", "Hip-Hop"],
+        "playlists": []
+      }
+    }
+  ],
+  "currentUser": null,
+  "totalUsers": 2
+}

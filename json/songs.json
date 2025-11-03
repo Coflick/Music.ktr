@@ -1,0 +1,134 @@
+{
+  "songs": [
+    {
+      "id": 1,
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "duration": "3:20",
+      "image": "https://th.bing.com/th/id/R.d65551fcf7e524adb1c1688e082a1393?rik=oWRhH4j%2bp%2bYpCg&pid=ImgRaw&r=0",
+      "alt": "Biểu tượng nốt nhạc trên nền tối",
+      "genre": "Pop",
+      "year": 2020,
+      "likes": 1250000,
+      "plays": 2500000,
+      "isLiked": false,
+      "isInPlaylist": false
+    },
+    {
+      "id": 2,
+      "title": "Save Your Tears",
+      "artist": "The Weeknd",
+      "duration": "3:35",
+      "image": "https://th.bing.com/th/id/R.a6320e63b7a8e55bc5c82ef009a50528?rik=0kwi8mPPNsJpnQ&pid=ImgRaw&r=0",
+      "alt": "Minh họa sóng âm thanh trừu tượng",
+      "genre": "Pop",
+      "year": 2020,
+      "likes": 980000,
+      "plays": 1800000,
+      "isLiked": false,
+      "isInPlaylist": false
+    },
+    {
+      "id": 3,
+      "title": "Levitating",
+      "artist": "Dua Lipa",
+      "duration": "3:23",
+      "image": "https://th.bing.com/th/id/R.4df688f4438f0ad760ab0dde0caa7a63?rik=8RXLrLOy3PD39A&riu=http%3a%2f%2fwww.coverstory.no%2fwp-content%2fuploads%2f2020%2f10%2fDua-2.jpeg&ehk=LcqqYEcwJorRsfm%2fIEsao6nUz7X%2bNtme2JFqN7BsyfA%3d&risl=&pid=ImgRaw&r=0",
+      "alt": "Các thanh equalizer đầy màu sắc đại diện cho âm nhạc",
+      "genre": "Pop",
+      "year": 2020,
+      "likes": 1100000,
+      "plays": 2200000,
+      "isLiked": true,
+      "isInPlaylist": true
+    },
+    {
+      "id": 4,
+      "title": "Good 4 U",
+      "artist": "Olivia Rodrigo",
+      "duration": "2:58",
+      "image": "https://tse4.mm.bing.net/th/id/OIP.kR8OyGvtWHKdBSf-aBBNYAHaFE?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "alt": "Đĩa vinyl với nhãn đầy màu sắc",
+      "genre": "Pop Rock",
+      "year": 2021,
+      "likes": 850000,
+      "plays": 1600000,
+      "isLiked": false,
+      "isInPlaylist": false
+    },
+    {
+      "id": 5,
+      "title": "Flowers",
+      "artist": "Miley Cyrus",
+      "duration": "3:20",
+      "image": "https://tse4.mm.bing.net/th/id/OIP.57EyB0teanwj2NJVgC7EnwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "alt": "Bìa album với thiết kế tối giản",
+      "genre": "Pop",
+      "year": 2023,
+      "likes": 2000000,
+      "plays": 3500000,
+      "isLiked": true,
+      "isInPlaylist": true
+    },
+    {
+      "id": 6,
+      "title": "As It Was",
+      "artist": "Harry Styles",
+      "duration": "2:47",
+      "image": "https://th.bing.com/th/id/R.abb1ae358cc3cdda3195a8228143446a?rik=XCOezoY5iGvAag&pid=ImgRaw&r=0",
+      "alt": "Bìa album với phong cách retro",
+      "genre": "Pop",
+      "year": 2022,
+      "likes": 1500000,
+      "plays": 2800000,
+      "isLiked": false,
+      "isInPlaylist": false
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Pop",
+      "icon": "fas fa-guitar",
+      "color": "bg-pink-500",
+      "songCount": 4
+    },
+    {
+      "id": 2,
+      "name": "Rock",
+      "icon": "fas fa-drum",
+      "color": "bg-red-500",
+      "songCount": 1
+    },
+    {
+      "id": 3,
+      "name": "Hip Hop",
+      "icon": "fas fa-headphones",
+      "color": "bg-purple-500",
+      "songCount": 0
+    },
+    {
+      "id": 4,
+      "name": "Jazz",
+      "icon": "fas fa-music",
+      "color": "bg-blue-500",
+      "songCount": 0
+    },
+    {
+      "id": 5,
+      "name": "R&B",
+      "icon": "fas fa-microphone",
+      "color": "bg-green-500",
+      "songCount": 0
+    },
+    {
+      "id": 6,
+      "name": "World",
+      "icon": "fas fa-globe-americas",
+      "color": "bg-yellow-500",
+      "songCount": 0
+    }
+  ],
+  "totalSongs": 6,
+  "totalDuration": "19:23"
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelodyHub - Web Âm nhạc & Giải trí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f0c29);
+            color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 40px 20px;
+        }
+        
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #fd79a8, #e84393, #6c5ce7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #fd79a8, #e84393);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #b3b3b3;
+            line-height: 1.6;
+        }
+        
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .nav-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav-card i {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #fd79a8;
+        }
+        
+        .nav-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .nav-card p {
+            font-size: 0.9rem;
+            color: #b3b3b3;
+            margin: 0;
+        }
+        
+        .structure-info {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: left;
+        }
+        
+        .structure-info h3 {
+            color: #fd79a8;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .folder {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+        
+        .folder i {
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .folder-html i { color: #e34c26; }
+        .folder-css i { color: #1572b6; }
+        .folder-js i { color: #f7df1e; }
+        .folder-json i { color: #000000; }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .logo { font-size: 3rem; }
+            .nav-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🎵</div>
+        <h1>MelodyHub</h1>
+        <p>Web Âm nhạc & Giải trí - Tổ chức theo ngôn ngữ lập trình</p>
+        
+        <div class="nav-grid">
+            <a href="html/giaodien.html" class="nav-card">
+                <i class="fas fa-home"></i>
+                <h3>Trang chủ</h3>
+                <p>Giao diện chính của ứng dụng</p>
+            </a>
+            
+            <a href="html/khampha.html" class="nav-card">
+                <i class="fas fa-compact-disc"></i>
+                <h3>Khám phá</h3>
+                <p>Tìm kiếm và khám phá âm nhạc</p>
+            </a>
+            
+            <a href="html/login.html" class="nav-card">
+                <i class="fas fa-user"></i>
+                <h3>Đăng nhập</h3>
+                <p>Đăng nhập và đăng ký tài khoản</p>
+            </a>
+            
+            <a href="html/noibat.html" class="nav-card">
+                <i class="fas fa-star"></i>
+                <h3>Nổi bật</h3>
+                <p>Bài hát và nghệ sĩ nổi bật</p>
+            </a>
+            
+            <a href="html/podcast.html" class="nav-card">
+                <i class="fas fa-headphones-alt"></i>
+                <h3>Podcast</h3>
+                <p>Khám phá podcast thú vị</p>
+            </a>
+            
+            <a href="html/sukien.html" class="nav-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Sự kiện</h3>
+                <p>Các sự kiện âm nhạc sắp tới</p>
+            </a>
+        </div>
+        
+        <div class="structure-info">
+            <h3>📁 Cấu trúc dự án theo ngôn ngữ</h3>
+            
+            <div class="folder">
+                <i class="fas fa-code folder-html"></i>
+                <div>
+                    <strong>html/</strong> - Giao diện người dùng (HTML)
+                </div>
+            </div>
+            
+            <div class="folder">
+                <i class="fas fa-palette folder-css"></i>
+                <div>
+                    <strong>css/</strong> - Styling & Thiết kế (CSS)
+                </div>
+            </div>
+            
+            <div class="folder">
+                <i class="fas fa-cogs folder-js"></i>
+                <div>
+                    <strong>js/</strong> - Logic & Tương tác (JavaScript)
+                </div>
+            </div>
+            
+            <div class="folder">
+                <i class="fas fa-database folder-json"></i>
+                <div>
+                    <strong>json/</strong> - Dữ liệu (JSON)
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
